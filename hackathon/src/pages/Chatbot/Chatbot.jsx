@@ -23,6 +23,7 @@ function ChatbotPage(
             display: 'flex',
             justifyContent: 'center',
             flexDirection: 'column',
+            height: '650px' //->채팅 결과 표시 값 높이
 
             
             }}>
@@ -70,7 +71,7 @@ function ChatbotPage(
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     onKeyDown={handleKeyPress} // Enter 키를 감지하는 이벤트 핸들러
-                    className="inputtext"
+                    className="inputText"
                     placeholder="메시지를 입력하세요"
                     />
                 </div>
