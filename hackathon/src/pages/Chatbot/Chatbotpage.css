@@ -1,0 +1,96 @@
+.hamburger {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    flex-shrink: 0;
+}
+
+.inputtext {
+    display: flex;
+
+    width: 20.625rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 6.25rem;
+    border: 1px solid var(--Sky-Light, #E3E5E5);
+    background: var(--Sky-White, #FFF);
+
+    color: var(--Ink-Lighter, #72777A);
+    font-family: "GmarketSansTTFMedium";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; /* 100% */
+    padding-left: 1rem;
+
+
+
+    position: fixed; /* 화면에 고정 */
+    bottom: 0; /* 화면의 하단에 위치 */
+    background-color: #fff; /* 배경색 설정 */
+    border: 1px solid #ccc; /* 경계선 설정 */
+    z-index: 1000; /* 다른 요소들 위에 표시되도록 설정 */
+
+    margin-bottom: 1rem;
+}
+
+.line {
+    display: flex;
+
+    width: 30.75rem;
+    height: 0.0625rem;
+    flex-shrink: 0;
+    right: 10px;
+
+    /* background: var(--Sky-Lighter, #F2F4F5); */
+    background: black;
+    position: fixed; /* 화면에 고정 */
+    bottom: 22rem; /* 화면의 하단에 위치 */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 300px;
+    height: 48rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.chatBox {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse; /* 최신 메시지를 아래로 배치 */
+}
+
+.messageBox {
+    display: inline-flex; /* 인라인 플렉스 박스 */
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    /* border-radius: 50px; */
+    border-radius: 20px;
+    background: #6066D5;
+    /* background: var(--Sky-Lighter, #F2F4F5); */
+    align-self: flex-end; /* 박스가 좌측에 위치하도록 */
+    max-width: 100%; /* 박스의 최대 너비를 부모 요소의 100%로 제한 */
+    word-wrap: break-word; /* 단어가 길 경우 줄바꿈 */
+    margin-top: 1rem;
+}
+
+.messageText {
+    color: var(--Ink-Darkest, #FFF);
+    font-family: "GmarketSansTTFMedium";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; /* 125% */
+}
+
+.inputContainer {
+    display: flex;
+    margin-top: 10px;
+}

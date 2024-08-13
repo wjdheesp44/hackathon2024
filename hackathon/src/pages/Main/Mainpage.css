@@ -1,0 +1,173 @@
+.box1 {
+    width: 21.25rem;
+    height: 12.9375rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: linear-gradient(187deg, #C6C8F3 4.36%, #767AC9 95.32%);
+    display: flex;
+    
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center;
+
+    position: relative;
+    top: 80px; /* 이미지 위에 버튼이 올라오도록 조정 */
+    /* left: 70px; 이미지 위에 버튼이 올라오도록 조정 */
+    z-index: 1; /* `z-index`를 높게 설정하여 이미지 위에 표시되도록 설정 */
+    flex-direction: column;
+    
+
+}
+
+.box2 {
+    width: 21.25rem;
+    /* height: 12.9375rem; */
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: linear-gradient(187deg, #C6C8F3 4.36%, #767AC9 95.32%);
+    display: flex;
+    
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.datetext {
+    width: 10.0625rem;
+    height: 1.625rem;
+    flex-shrink: 0;
+
+    border-radius: 6.25rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px #767AC9;
+
+    color: #000;
+    font-family: "GmarketSansTTFBold";
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.7rem; /* height 값과 동일하게 설정 */
+    text-align: center;
+}
+
+.text1 {
+    width: 5rem;
+    height: 2.3125rem;
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px #767AC9;
+    font-family: "GmarketSansTTFBold";
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.1875rem; /* 100% */
+}
+
+.text2 {
+    width: 19.1875rem;
+    height: 2.1875rem;
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px #767AC9;
+    font-family: "GmarketSansTTFBold";
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.1875rem; /* 140% */
+}
+
+
+.text {
+    width: 17.875rem;
+    height: 2.1875rem;
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px #767AC9;
+    font-family: "GmarketSansTTFBold";
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.1875rem; /* 152.174% */
+
+    margin-bottom: 0.81rem;
+}
+
+.folder {
+    width: 13.26888rem;
+    height: 13.26888rem;
+    transform: rotate(-7.278deg);
+    flex-shrink: 0;
+
+    justify-content: flex-end;
+    position: absolute;
+
+    
+    top: -30px; 
+    left: 20px; 
+    z-index: 2; 
+} 
+
+.news {
+    width: 14rem;
+    height: 14rem;
+    flex-shrink: 0;
+    justify-content: flex-end;
+
+    position: absolute;
+    top: -30px;
+    right: 20px;  
+    z-index: 2; 
+}
+
+.box {
+    height: 2.4375rem; /* 39px / 16 = 2.4375rem */
+    width: 13.25rem; /* 212px / 16 = 13.25rem */
+    flex-shrink: 0;
+    border-radius: 6.25rem;
+    border: none;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px #767AC9;
+    margin-bottom: 1.5rem;
+    
+}
+
+.hamburger {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    flex-shrink: 0;
+}
+
+.box .rectangle {
+    color: #000;
+
+    text-shadow: 0px 1px 10px #C8C8C8;
+    font-family: "GmarketSansTTFMedium";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; /* 100% */
+}
+
+.todaytext {
+    width: 15.81rem;
+    height: 2.3125rem;
+    flex-shrink: 0;
+
+    margin-top: 2.06rem;
+    margin-bottom: 1rem;
+    
+    justify-content: flex-start;
+
+    color: #000;
+    font-family: "GmarketSansTTFBold";
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.1875rem; /* 100% */
+}
