@@ -1,0 +1,38 @@
+.news-container {
+  display: flex;
+  /* flex-direction: column-reverse; */
+  gap: 10px;
+  padding: 20px;
+  overflow-x: auto; /* 가로 스크롤 활성화 */
+  /* white-space: nowrap; 자식 요소들을 한 줄로 나열 */
+  overflow: hidden;
+}
+
+.news-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto; /* 요소가 자동으로 크기를 조정하지 않도록 설정 */
+  max-width: 200px; /* 박스의 최소 너비를 설정 (필요에 따라 조정) */
+  max-height: 100px;
+  /* flex-wrap: wrap; */
+}
+
+.news-title {
+  font-size: 1em;
+  color: #007bff;
+  text-decoration: none;
+  text-overflow: hidden;
+}
+
+
+.news-title:hover {
+  text-decoration: underline;
+}
+
+.news-description {
+  margin-top: 10px;
+  color: #333;
+}

@@ -6,6 +6,7 @@ import news from '../../assets/news.png';
 import hamburger from '../../assets/hamburger.png';
 import x from '../../assets/x.png' ;
 import Header from '../../components/Header';
+import News from '../Chatbot/response';
 
 function MainPage(
     {
@@ -72,12 +73,13 @@ function MainPage(
                 height: '19.16rem',
 
             }}>
-                {/* <img className="folder" src={folder}></img>
-                <img className="news" src={news}></img> */}
+                
 
                 
 
                 <div className="box1">
+                    {/* <img className="folder" src={folder}></img>
+                    <img className="news" src={news}></img> */}
                     <div className="text">“다양한 시각을 위한 첫걸음"</div>
                     <button type='button' className="box" onClick={onClickSearch} style={{
                         cursor: 'pointer'
@@ -94,11 +96,12 @@ function MainPage(
                     display: 'flex',
                     justifyContent: 'flex-start'
                 }}>오늘의 언론</div>
+                <News />
             
 
                 
 
-                <div className="box2" style={{
+                {/* <div className="box2" style={{
                     display: 'flex',
                     justifyContent: 'center',
                     height: '8.5rem',
@@ -124,7 +127,7 @@ function MainPage(
                     position: '0rem',
                     marginBottom: '1rem'}}> 
                     
-                </div>
+                </div> */}
             {/* </div> */}
 {/*         
         <div className="box">

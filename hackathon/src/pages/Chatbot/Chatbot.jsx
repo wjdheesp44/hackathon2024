@@ -5,6 +5,7 @@ import folder from '../../assets/folder.png';
 import news from '../../assets/news.png';
 import hamburger from '../../assets/hamburger.png'
 import plus from '../../assets/plus.png'
+import News from './response';
 
 function ChatbotPage(
     {
@@ -14,16 +15,18 @@ function ChatbotPage(
         handleKeyPress,
         messages,
         input,
-        setInput
+        setInput,
+        setMessages
     }) {
 
+
     return (
-        
         <div style={{
             display: 'flex',
             justifyContent: 'center',
             flexDirection: 'column',
-            height: '650px' //->채팅 결과 표시 값 높이
+            height: '850px', //->채팅 결과 표시 값 높이
+            overflow: 'visible'
 
             
             }}>
@@ -58,11 +61,14 @@ function ChatbotPage(
                 </div>
             </div> */}
             <div className="container">
-                <div className="chatBox">
+                <div className="chat-container">
                     {messages.map((message, index) => (
-                    <div key={index} className="messageBox"> {/* 메시지 박스 */}
-                        <div className="messageText">{message}</div> {/* 메시지 텍스트 */}
-                    </div>
+                        <div
+                            key={index}
+                            className={`message ${message.sender}`}
+                        >
+                            {message.text}
+                        </div>
                     ))}
                 </div>
                 <div className="inputContainer">

@@ -53,13 +53,17 @@
     height: 48rem;
     border: 1px solid #ccc;
     padding: 10px;
+    /* flex-wrap: nowrap; */
+    /* overflow-y: scroll; */
 }
 
 .chatBox {
     flex: 1;
     overflow-y: auto;
     display: flex;
-    flex-direction: column-reverse; /* 최신 메시지를 아래로 배치 */
+    /* flex-direction: column-reverse; 최신 메시지를 아래로 배치 */
+    flex-direction: column;
+    /* overflow: hidden; */
 }
 
 .messageBox {
@@ -90,4 +94,27 @@
 .inputContainer {
     display: flex;
     margin-top: 10px;
+}
+
+/* ChatbotComponent.css 예시 */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 60%;
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #d1e7dd;
+}
+
+.message.server {
+    align-self: flex-start;
+    background-color: #f8d7da;
 }
